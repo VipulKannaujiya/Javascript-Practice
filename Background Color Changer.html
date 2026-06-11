@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <style>
+        #box1
+        {
+            text-align: center;
+        }
+        .h
+        {
+            text-shadow: 0px 0px 10px white;
+        }
+        </style>
+    </head>
+<body>
+    <div id="box1">
+    <h1 class="h"> Background Color Changer</h1>
+    <button onclick="color()">Change Background</button>
+    </div>
+
+    <script>
+
+        let colors = ["red", "green", "blue", "yellow", "orange", "black", "pink","aqua", "lime", "indigo"];
+        let i = 0;
+        function color()
+        {
+            document.body.style.backgroundColor = colors[i];
+            i = ( i+1)%colors.length;
+        }
+
+
+    </script>
+</body>
+</html>

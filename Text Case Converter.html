@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <style>
+            #box1
+            {
+                width: 800px;
+                height: 600px;
+                background-color: beige;
+                margin: 0px auto;
+                margin-top: 10px;
+                text-align: center;
+            }
+            textarea
+            {
+                width: 400px;
+                height: 200px;
+                margin-top: -20px;
+                text-align: left;
+                vertical-align: top;
+                padding: 5;
+                font-size: 15px;
+            }
+            button
+            {
+               margin-top: 10px;
+            }
+            #result
+            {
+                text-align: center;
+                font-size: 40px;
+            }
+        </style>
+    </head>
+<body>
+
+    <div id="box1">
+        <h1 style="text-align: center;"> Text Case Converter </h1>
+        <br/>
+        <textarea id="t1"></textarea>
+        <br/>
+        <button onclick="uppercase()">UPPERCASE</button>
+        <button>lowercase</button>
+        <button>Capital First Letter</button>
+        <br/>
+
+        <p id="result">Output will appear here</p>
+    </div>
+
+    <script>
+
+        function uppercase()
+        {
+            x = t1.value;
+            if(x>=A || x<=Z)
+            {
+                result.innerHTML ="UPPERCASE";
+            }
+            else if(x>=a || x<=z)
+            {
+                result.innerHTML ="lowercase";
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>
