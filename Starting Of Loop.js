@@ -21,10 +21,19 @@ for(let a of "Vipul"){
 }
 
 //WHILE LOOP IN JS
-const prompt = require('prompt-sync')()
-let n = Number(prompt("Enter a Number : "))
+let n = 5
 i = 0
 while(n > i){
     console.log(i)
     i++
 }
+
+// DO WHILE LOOP IN JS
+
+i = 0
+n = 5
+do{
+    console.log("Vipul Kannaujiya")
+    i++
+}
+while(i < n)
