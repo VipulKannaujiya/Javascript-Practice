@@ -1,3 +1,5 @@
+// =================================================== LOOPS IN JAVASCRIPT ===================================================
+
 // NORMAL FOR LOOP SYNTAX
 for(i=1; i<=21; i++){
     console.log(i, "Thank you, Universe")
@@ -37,3 +39,21 @@ do{
     i++
 }
 while(i < n)
+
+
+// =================================================== FUNCTIONS IN JAVASCRIPT ===================================================
+
+// FUNCTION DECLARATION SYNTAX
+function greet() {
+    console.log("Hello, Universe!")
+}
+
+// FUNCTION EXPRESSION SYNTAX
+let greet2 = function() {
+    console.log("Hello, Universe!")
+}
+
+// ARROW FUNCTION SYNTAX
+let greet3 = () => {
+    console.log("Hello, Universe!")
+}
